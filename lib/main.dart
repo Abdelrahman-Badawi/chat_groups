@@ -1,5 +1,4 @@
 import 'package:chat_groups/features/home/presentaion_logo.dart';
-import 'package:chat_groups/features/splash_screen/animated_splash_screen_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 

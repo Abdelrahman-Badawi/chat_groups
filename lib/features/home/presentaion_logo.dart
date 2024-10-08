@@ -14,9 +14,9 @@ class PresentaionLogo extends StatefulWidget {
 class _PresentaionLogoState extends State<PresentaionLogo> {
   @override
   void initState() {
-    Future.delayed(const Duration(seconds: 3), () {
+    Future.delayed(const Duration(seconds: 7), () {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) =>const LoginPage()));
+          context, MaterialPageRoute(builder: (context) => const LoginPage()));
     });
     super.initState();
   }
@@ -31,7 +31,7 @@ class _PresentaionLogoState extends State<PresentaionLogo> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            SizedBox(height: size.height * 0.2),
+            SizedBox(height: size.height * 0.1),
             Image.asset(
               AssetsImages.logo,
               width: 110,
@@ -50,6 +50,7 @@ class _PresentaionLogoState extends State<PresentaionLogo> {
                   'The best chat app of this century',
                   style: Styels.textStyle24.copyWith(fontSize: 15),
                 ),
+                SizedBox(height: size.height * 0.3),
                 // SizedBox(height: size.height * 0.2)
               ],
             )
